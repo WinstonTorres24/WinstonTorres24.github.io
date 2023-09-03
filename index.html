@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GameTheory</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+</head>
+
+<body>
+    <header class="container-fluid bg-primary d-flex justify-content-center">
+        <p class="text-light mb-0 p-2 fs-5">Teoría del Juego</p>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-ligth bg-light p-3">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <span class="text-primary fs-5 fw-bold">GameTheory</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="badge text-bg-info fs-5 fw-bold" class="nav-link active" aria-current="page"
+                            href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="badge text-bg-info fs-5 fw-bold" class="nav-link" href="#Historia">Historia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="badge text-bg-info fs-5 fw-bold" class="nav-link" href="#Definicion">Definicion</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="badge text-bg-info fs-5 fw-bold" class="nav-link"
+                            href="#Caracteristicas">Caracteristicas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="badge text-bg-info fs-5 fw-bold" class="nav-link" href="#Ejemplos">Ejemplos</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-primary btn-dark btn-outline-success" type="button">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="3000">
+                <img src="IMG/GAMETHEORY.png" class="d-block w-100 img-fluid h-25" alt="Teoria"
+                    style="max-height: 600px;">
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+                <img src="IMG/GAMETHEORY2.png" class="d-block w-100 img-fluid h-25" alt="juego"
+                    style="max-height: 600px;">
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+                <img src="IMG/GAMETHEORY3.png" class="d-block w-100 img-fluid h-25" alt="tju"
+                    style="max-height: 600px;">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <section class="w-75 mx-auto text-left pt-5" id="Historia">
+        <h1 class="p-3 fs-2 border-top border-3">Historia<span class="text-primary"> Teoría del juego</span></h1>
+        <p><span class="text-primary">H.</span> La Teoría de Juegos fue creada por Jhon Von Neumann y Oscar Morgenstern
+            en su libro clásico The Theory of Games Behavior, publicado en 1944. Aunque otros habían anticipado algunas
+            ideas como Antoine Augustin Cournot sobre un duopolio y Nash (equilibrio en el juego); no fue hasta que
+            apareció el libro de Von Neumann y Morgenstern que el mundo comprendió cuán potente era el instrumento
+            descubierto para estudiar las relaciones humanas.
+            Von Neumann y Morgenstern investigaron dos planteamientos distintos de la Teoría de Juegos. El primero es el
+            planteamiento estratégico o no cooperativo. Este planteamiento requiere especificar detalladamente lo que
+            los jugadores pueden y no pueden hacer durante el juego, y después buscar cada jugador una estrategia
+            óptima. Lo que es mejor para un jugador depende de lo que los otros jugadores piensan hacer, y esto a su vez
+            depende de lo que ellos piensan del primer jugador hará. Von Neumann y Morgenstern resolvieron este problema
+            en el caso particular de juegos con dos jugadores cuyos intereses son opuestos. A estos juegos se les llama
+            estrictamente competitivos, o de suma cero, porque cualquier ganancia para un jugador siempre se equilibra
+            exactamente por una pérdida correspondiente para el otro jugador. El ajedrez, el backgammon y el póquer son
+            juegos tratados habitualmente como juegos de suma cero.
+            La segunda parte del libro de Von Neumann y Morgenstern desarrollaron el planteamiento coalicional o
+            cooperativo, en el que buscaron describir la conducta óptima en juegos con muchos jugadores. Puesto que éste
+            es un problema mucho más difícil, sus resultados fueron menos precisos que los alcanzados para el caso de
+            suma cero y dos jugadores.
+        </p>
+    </section>
+    <section class="w-75 mx-auto text-left pt-5" id="Definicion">
+        <h1 class="p-3 fs-2 border-top border-3">Definición<span class="text-primary"> Teoría del Juego</span></h1>
+        <p><span class="text-primary">TJ.</span> La teoría de juegos es un campo de estudio que consiste en las
+            estrategias y resultados de las interacciones entre agentes racionales que se enfrentan a situaciones de
+            conflicto. Esta se basa en modelos matemáticos que representan las reglas, opciones, preferencias y
+            expectativas del individuo frente a determinado escenario. La teoría de juegos tiene aplicaciones en
+            diversas disciplinas, tales como: las ciencias económicas, la política, la biología evolutiva, la filosofía,
+            la psicología, la informática, entre otras; estas aplicaciones se explicarán posteriormente.
+        </p>
+        <p>
+            En la teoría de juegos se presentan los juegos no cooperativos que es donde los jugadores toman decisiones
+            sin comunican directa y su principal objetivo es maximizar sus propias ganancias y por otro lado los juegos
+            cooperativos, donde los jugadores pueden llegar a acuerdos que les permita obtener resultados mutuamente
+            beneficiosos.
+        </p>
+    </section>
+    <section class="w-75 mx-auto text-left pt-5" id="Caracteristicas">
+        <h1 class="p-3 fs-2 border-top border-3">Caracteristicas<span class="text-primary"> Teoria del Juego</span></h1>
+        <p><span class="text-primary">TJ.</span> Acontinuacion, se presentaran los conceptos primarios, con respecto a
+            la Teoria de Juegos</p>
+        <p><span class="text-primary">Jugadores.</span> Son los agentes que toman las decisiones relevantes del juego o
+            la situación por analizar.</p>
+        <p><span class="text-primary">Estrategias.</span> Especifican las elecciones que realiza el jugador para
+            alcanzar sus objetivos en el juego. </p>
+        <p><span class="text-primary">Pagos.</span> Es el resultado que el jugador obtiene partiendo de sus acciones
+            durante el juego, éstos pueden ser en términos de utilidad, dinero, puntos, etc.</p>
+        <p><span class="text-primary">Equilibrio de Nash.</span> Es una situación en la que los jugadores han elegido
+            sus estrategias según las que los demás han estado utilizando durante el juego, con el fin de quedar mejor
+            posicionado en el juego</p>
+    </section>
+    <section class="w-75 mx-auto text-center pt-5 p-4" id="Ejemplos">
+        <h1 class="p-3 fs-2 border-top border-3">Ejemplos<span class="text-primary"> Teoria del Juego</span></h1>
+        <p><span class="text-primary">Aplicaciones.</span> La teoría de juegos tiene multitud de aplicaciones en
+            diferentes campos,
+            destacando la ciencia económica, ciencias políticas, biología evolutiva o incluso filosofía.</p>
+    </section>
+
+    <section class="container-fluid">
+        <div class="row w-75 mx-auto">
+            <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start my-5">
+                <img src="IMG/Economia.png" alt="Teoria" width="180" height="160">
+                <div>
+                    <h3 class="fs-5 mt-4 px-4 pd-1 text-primary">LA ECONOMIA.</h3>
+                    <P class="px-4">La teoría de juegos ha encontrado aplicaciones directas en la economía, este
+                        panorama proporciona componentes necesarios para un juego, los investigadores de esta rama se
+                        han centrado en estudiar los mercados de duopolio y oligopolio.</P>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start my-5">
+                <img src="IMG/Politica.png" alt="Teoria" width="180" height="160">
+                <div>
+                    <h3 class="fs-5 mt-4 px-4 pd-1 text-primary">LA POLITICA.</h3>
+                    <P class="px-4">Esta teoría no ha tenido tanto impacto como el económico, debido a que las personas
+                        son menos racionales cuando se trata de dinero; sin embargo, la teoría de juegos se ve reflejada
+                        en las elecciones cuando cada candidato realiza sus discursos con el fin de convencer al público
+                        para así lograr el triunfo en dicha elección.</P>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start my-5">
+                <img src="IMG/Biologia.png" alt="Teoria" width="180" height="160">
+                <div>
+                    <h3 class="fs-5 mt-4 px-4 pd-1 text-primary">BIOLOGIA.</h3>
+                    <P class="px-4">Suele referirse al estudio de la evolución, por lo cual se utiliza para analizar el
+                        comportamiento de los organismos en la naturaleza, como la supervivencia, la cooperación y
+                        relación entre especies.</P>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start my-5">
+                <img src="IMG/Filosofia.png" alt="Teoria" width="180" height="160">
+                <div>
+                    <h3 class="fs-5 mt-4 px-4 pd-1 text-primary">FILOSOFIA.</h3>
+                    <P class="px-4">Con respecto a la ética una de sus ramas, la teoría de juegos puede utilizarse para
+                        analizar dilemas éticos y situaciones en las que las decisiones de un individuo afectan a otros.
+                    </P>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start my-5">
+                <img src="IMG/Psicologia.png" alt="Teoria" width="180" height="160">
+                <div>
+                    <h3 class="fs-5 mt-4 px-4 pd-1 text-primary">LA PSICOLOGIA.</h3>
+                    <P class="px-4">La teoría de juegos se ha utilizado para modelar el comportamiento humano en
+                        situaciones de conflicto para entender la toma de decisiones frente a problemáticas sociales.
+                    </P>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start my-5">
+                <img src="IMG/Informatica.png" alt="Teoria" width="180" height="160">
+                <div>
+                    <h3 class="fs-5 mt-4 px-4 pd-1 text-primary">LA INFORMATICA.</h3>
+                    <P class="px-4">La teoría de juegos se utiliza en la informática para optimizar la asignación de
+                        recursos que proporcionen herramientas para abordar problemas de toma de decisiones estratégicas
+                        en una variedad de aplicaciones, desde la seguridad informática hasta la optimización de
+                        sistemas.
+                    </P>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="w-75 m-auto text-center" id="link">
+            <h1 class="mb-5 fs-2">Evaluacion Practica <span class="text-primary">Quizziz</span></h1>
+            <p class="fs-4">En el siguiente apartado de la pagina lo dirigira a una actividad practica para desarrollar. El codigo para desarrollar la actividad es: 087714
+            </p>
+            <a class="fs-2 text-bg-info" href="https://quizizz.com/join?gc=047045"
+                target="_blank">Actividad Practica</a>
+        </div>
+    </section>
+      
+    <div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#000b76" fill-opacity="1" d="M0,160L48,181.3C96,203,192,245,288,245.3C384,245,480,203,576,165.3C672,128,768,96,864,90.7C960,85,1056,107,1152,96C1248,85,1344,43,1392,21.3L1440,0L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+    <footer class="w-100 d-flex aling-items justify-content-center flex-wrap">
+        <img src="IMG/FUU.PNG" class="rounded float-start" alt="FUU" width="140" height="50">
+        <p class="fs-6 px-3 pt-3">GAMETHEORY. DESARROLLO PAGINA WEB CON BOOTSTRAP; 
+        FUNDACION UNIVERSITARIA UNIMONSERRATE, 2023
+        </p>
+        <div id="iconos">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-twitter"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+        </div>
+        <img src="IMG/FUU.PNG" class="rounded float-end" alt="FUU" width="140" height="50">
+        </div>
+    </footer>
+    </div>
+    
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
